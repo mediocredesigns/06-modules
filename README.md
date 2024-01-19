@@ -44,7 +44,7 @@
 ## 06-3 : CommonJS
 
 1. Duplicate `numberInventory.js` and `stringInventory.js` in `src/lessons/iife` to the `commonjs` directory.
-2. Create a file in `src/lessons/commonjs` called `require.js`.
+2. Open the file in `src/lessons/commonjs` called `require.js`.
 3. Follow the instructions in `require.js` to create a `require` function, and a `cache` object that are available in the global scope.
 4. In our inventory scripts, let's set the exports porperty of the cache['pathname'] to an object with properties equal to our interface.
 5. In `src/lessons/commonjs/index.html` add a script tag before `</body>` to load all three scripts.
