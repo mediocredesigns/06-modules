@@ -22,14 +22,8 @@ function require(path) {
   // Check if the module is in the cache
   // If no, throw an error
   // If yes, return the module's exports object
-  if (!require.cache[path]) {
-    throw new Error("Module not found: " + path);
-  }
-  return require.cache[path].exports;
 }
 
 // Set the cache property on the require function to an empty object
-require.cache = {};
 
 // Expose the require function globally
-window.require = require;
