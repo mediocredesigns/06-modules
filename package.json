@@ -4,17 +4,12 @@
   "description": "Get started with Javascript",
   "scripts": {
     "start": "npm install",
-    "test:local": "open SpecRunner.html",
-    "test:remote": "karma start"
+    "test:local": "echo '\\033[1;33mPlease open the README.md file at ./src/lessons/README.md for instructions\\033[0m\n'"
   },
   "keywords": [],
   "author": "Web Bae",
   "license": "ISC",
   "devDependencies": {
-    "jasmine": "^5.1.0",
-    "jasmine-core": "^5.1.1",
-    "karma": "^6.4.2",
-    "karma-chrome-launcher": "^3.2.0",
-    "karma-jasmine": "^5.1.0"
+    "cross-env": "^7.0.3"
   }
 }

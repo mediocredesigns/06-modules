@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Modules</title>
+  </head>
+
+  <body>
+    <h1>Modules</h1>
+    <p>
+      Javascript modules are reusable pieces of code that can be exported from
+      one program and imported for use in another program. Modules are a way to
+      split up large programs into smaller pieces. Each module is a piece of
+      code that is executed once it is loaded. Modules use the export keyword to
+      export code to another program, and the import keyword to import code from
+      another program.
+    </p>
+
+    <script type="module" src="./numberInventory.js"></script>
+    <script type="module">
+      import { inventory as numberInventory } from "./numberInventory.js";
+      import { inventory as stringInventory } from "./stringInventory.js";
+      console.log({ numberInventory, stringInventory });
+    </script>
+  </body>
+</html>

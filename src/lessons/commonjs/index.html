@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CommonJS</title>
+  </head>
+
+  <body>
+    <h1>CommonJS</h1>
+    <p>
+      CommonJS is a specification for a module system. It is a way to organize
+      your code into separate files. It is a way to share code between files.
+      Before CommonJS, JavaScript did not have a way to do this. CommonJS is
+      used in Node.js.
+    </p>
+
+    <script src="./require.js"></script>
+    <script src="./numberInventory.js"></script>
+    <script src="./stringInventory.js"></script>
+    <script>
+      let numberInventory = require("./numberInventory.js");
+      let stringInventory = require("./stringInventory.js");
+    </script>
+  </body>
+</html>
