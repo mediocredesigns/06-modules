@@ -32,7 +32,6 @@ export default class GameBoard {
 
     // If no other card is flipped, keep this card flipped
     if (this.flippedCards.length === 0) {
-      console.log("here");
       this.flippedCards.push(card);
     } else if (this.flippedCards.length === 1) {
       // If one card is already flipped, check if this is a match

@@ -1,17 +1,9 @@
 import GameBoard from "./GameBoard.js";
+import { EIGHT_EMOJIS_ARRAY } from "./constants.js";
 
 export default class GameController {
   constructor() {
-    this.gameBoard = new GameBoard([
-      "😀",
-      "🚀",
-      "🌵",
-      "🎸",
-      "🍕",
-      "👽",
-      "🐱",
-      "🚗",
-    ]);
+    this.gameBoard = new GameBoard(EIGHT_EMOJIS_ARRAY);
     this.initializeGame();
   }
 
