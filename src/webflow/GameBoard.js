@@ -32,7 +32,6 @@ export default class GameBoard {
 
     // If no other card is flipped, keep this card flipped
     if (this.flippedCards.length === 0) {
-      console.log("here");
       this.flippedCards.push(card);
     } else if (this.flippedCards.length === 1) {
       // If one card is already flipped, check if this is a match
@@ -55,6 +54,7 @@ export default class GameBoard {
         if (this.matchedCount === this.cards.length) {
           // Implement game win logic here (e.g., display a message)
           console.log("You won!");
+          document.querySelector(".you-win-wrap").classList.remove("hide");
         }
       } else {
         // If cards don't match, flip them back after a short delay
