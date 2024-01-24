@@ -54,6 +54,7 @@ export default class GameBoard {
         if (this.matchedCount === this.cards.length) {
           // Implement game win logic here (e.g., display a message)
           console.log("You won!");
+          document.querySelector(".you-win-wrap").classList.remove("hide");
         }
       } else {
         // If cards don't match, flip them back after a short delay
