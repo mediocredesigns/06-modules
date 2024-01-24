@@ -24,6 +24,4 @@ export default class GameController {
       });
     });
   }
-
-  // Additional methods as needed, such as resetGame, updateScore, etc.
 }
